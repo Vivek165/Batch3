@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}{{ hostname }} · PulseMonitor{% endblock %}
+{% block content %}
+<section class="panel">
+  <div class="panel-head">
+    <p class="eyebrow">Server detail</p>
+    <h1>{{ hostname }}</h1>
+    <p class="muted">Placeholder — CPU % will auto-refresh here later.</p>
+  </div>
+  <dl class="metric-grid">
+    <div class="metric">
+      <dt>CPU %</dt>
+      <dd class="mono">—</dd>
+    </div>
+  </dl>
+  <p><a href="{{ url_for('main.dashboard') }}">← Back to dashboard</a></p>
+</section>
+{% endblock %}

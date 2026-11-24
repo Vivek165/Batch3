@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Home · PulseMonitor{% endblock %}
+{% block content %}
+<section class="hero">
+  <p class="eyebrow">Linux CPU monitoring</p>
+  <h1>Monitoring Demo</h1>
+  <p class="lede">
+    Read-only view of live CPU % from Linux hosts — no SSH required.
+    Internal L1/L2/L3 demo running on this Cursor host.
+  </p>
+  <div class="actions">
+    <a class="btn primary" href="{{ url_for('main.dashboard') }}">Open dashboard</a>
+    <a class="btn ghost" href="{{ url_for('main.manage_servers') }}">Manage servers</a>
+  </div>
+</section>
+{% endblock %}

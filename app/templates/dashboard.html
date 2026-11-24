@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Dashboard · PulseMonitor{% endblock %}
+{% block content %}
+<section class="panel">
+  <div class="panel-head">
+    <h1>Dashboard</h1>
+    <p class="muted">Placeholder — live CPU % arrives in a later phase.</p>
+  </div>
+  <div class="empty-state">
+    <p>No servers reporting yet.</p>
+    <a class="btn ghost" href="{{ url_for('main.manage_servers') }}">Add a hostname</a>
+  </div>
+</section>
+{% endblock %}
